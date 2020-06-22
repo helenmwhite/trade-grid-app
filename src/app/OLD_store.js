@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import tradeGridReducer from '../features/tradeGrid/tradeGridSlice';
+import counterReducer from '../features/counter/counterSlice';
 
 export default configureStore({
   reducer: {
-    tradeGrid: tradeGridReducer,
+    counter: counterReducer,
   },
 });
