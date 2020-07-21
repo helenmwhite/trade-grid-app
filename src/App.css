@@ -1,3 +1,5 @@
+h2 { float: left } 
+
 .App {
   text-align: center;
 }
@@ -23,7 +25,7 @@
 }
 
 .App-link {
-  color: rgb(112, 76, 182);
+  color: rgb(38, 231, 45);
 }
 
 @keyframes App-logo-float {
@@ -37,3 +39,4 @@
     transform: translateY(0px)
   }
 }
+
