@@ -6,7 +6,9 @@ import 'ag-grid-community/dist/styles/ag-grid.css';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   setFilter,
+  getTrades,
   getTradesAsync,
+  getTradesAwait,
   selectColumnDefs,
   selectRowData,
 } from './tradeGridSlice';
@@ -51,7 +53,7 @@ export function TradeGrid() {
 
         <button
           className={styles.asyncButton}
-          onClick={() => dispatch(getTradesAsync(filter))}
+          onClick={ (filter) => dispatch(getTradesAsync(filter))}
         >
           Search Trades
         </button> 
